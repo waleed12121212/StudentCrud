@@ -1,0 +1,14 @@
+﻿@model Student
+<h2>Edit Student</h2>
+<form action="/Student/Update">
+    <input type="hidden" name="Id" value="@Model.Id" />
+    <div class="mb-3">
+        <label for="Name" class="form-label">Student Name</label>
+        <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name">
+    </div>
+    <div class="mb-3">
+        <label for="Age" class="form-label">Student Age</label>
+        <input type="number" name="Age" class="form-control" id="Age" value="@Model.Age">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
